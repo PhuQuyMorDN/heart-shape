@@ -22,18 +22,19 @@
   <style>
   html, body {
     height: 100%;
-    padding: 0;
-    margin: 0;
-    background: #000;
-    display: flex;
-    align-items: center;
-    background-image: url(./475146013_2657192757813930_8329560863996023170_n.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
- 
+padding: 0;
+margin: 0;
+/* background: #000; */
+display: flex;
+align-items: center;
+justify-content: center; /* Căn giữa hình nền theo chiều ngang */
+background-image: url(./475146013_2657192757813930_8329560863996023170_n.jpg);
+background-repeat: no-repeat;
+background-size: contain; /* Đảm bảo hình ảnh giữ tỷ lệ */
+background-position: center; /* Đặt hình nền ở giữa */
+width: 100%;
 }
- 
+
 .box {
   width: 100%;
   position: absolute;
@@ -334,6 +335,10 @@ var ParticlePool = (function() {
   }, 10);
 })(document.getElementById('pinkboard'));
   </script>
+  <div class="name">
+    1111
+  </div>
+    
   <div class="center-text",
   style="
         width: 100%;
@@ -346,7 +351,6 @@ var ParticlePool = (function() {
         justify-content: center;
         margin-bottom: 5px;
         text-align: center;">Chúc e 8/3 vui vẻ, hạnh phúc <br/>I love you</div>
-
  </BODY>
 </HTML>
 <!-- partial -->
